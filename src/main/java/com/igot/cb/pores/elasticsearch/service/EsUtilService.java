@@ -24,4 +24,6 @@ public interface EsUtilService {
   boolean isIndexPresent(String indexName);
 
   BulkResponse saveAll(String esIndexName, List<JsonNode> entities) throws IOException;
+
+  boolean isElasticsearchHealthy();
 }
